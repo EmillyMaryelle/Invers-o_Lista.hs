@@ -1,1 +1,0 @@
-# Invers-o_Lista.hs
