@@ -1,0 +1,14 @@
+
+--1 passo: pegar um vetor de numeros inteiros
+vector :: [x] -> [x] 
+-- 2 passo: realizar a leitura da lista criado anterior
+vector = \list -> 
+-- 3 passo: usar alguma forma de recursao
+    case list of  
+        [] -> []
+        x:xs -> vector xs ++ [x]
+-- 4 passo: retornar o valor da inversão na tela
+main = print ("A lista invertida eh: ", reverse [1, 2, 3, 4, 5])
+
+--  Neste trabalho os alunos devem apresentar uma
+função em haskell que realiza a inversão da ordem dos elementos de uma lista.
